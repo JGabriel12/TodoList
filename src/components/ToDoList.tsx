@@ -16,6 +16,7 @@ export function ToDoList() {
   function handleCreateNewTask(event: FormEvent) {
     event.preventDefault()
     setTasks([...tasks, title])
+    setTitle('')
   }
 
   function deleteTask(taskToDelete: string) {
@@ -31,8 +32,11 @@ export function ToDoList() {
       <form onSubmit={handleCreateNewTask}>
         <input
           onChange={handleChangeTitle}
-          type="text" 
-          placeholder='Adicione uma nova tarefa'/>
+          type="text"
+          value={title}
+          placeholder='Adicione uma nova tarefa'
+          required
+        />
         <button type='submit'>
           Criar 
           <PlusCircle size={32}/>
