@@ -18,6 +18,14 @@ export function ToDoList() {
     setTasks([...tasks, title])
   }
 
+  function deleteTask(taskToDelete: string) {
+    const tasksWithoutDeleteOne = tasks.filter(task => {
+     return task !== taskToDelete
+    })
+
+    setTasks(tasksWithoutDeleteOne)
+ }
+
   return (
     <div className={style.wrapper}>
       <form onSubmit={handleCreateNewTask}>
@@ -34,7 +42,7 @@ export function ToDoList() {
       <div className={style.tasksCount}>
         <div>
           <span className={style.createdTask}>Tarefas criadas</span>
-          <span className={style.numberTask}>5</span>
+          <span className={style.numberTask}>{tasks.length}</span>
         </div>
         <div>
           <span className={style.finishedTask}>Concluídas</span>
@@ -48,6 +56,7 @@ export function ToDoList() {
             <Task 
               key={task}
               taskTitle={task}
+              onDeleteTask={deleteTask}
             />
           )
         })}
