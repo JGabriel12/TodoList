@@ -2,12 +2,15 @@ import { Trash } from 'phosphor-react'
 
 import style from './Task.module.css'
 
+interface TaskContent  {
+  taskTitle: string;
+}
 
-export function Task() {
+export function Task({ taskTitle }:TaskContent) {
   return (
     <div className={style.taskList}>
       <input type="checkbox"/>
-      <p>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
+        <p>{taskTitle}</p>
       <button>
         <Trash size={24}/>
       </button>

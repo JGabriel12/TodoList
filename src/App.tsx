@@ -3,11 +3,12 @@ import { ToDoList } from './components/ToDoList'
 
 import './global.css'
 
+
 export function App() {
   return (
     <div>
       <Header />
-      <main>
+      <main>  
         <ToDoList />
       </main>
     </div>
