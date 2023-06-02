@@ -14,7 +14,9 @@ export function Task({ taskTitle, onDeleteTask, onChecked}:TaskContent) {
 
 
   function handleDeleteTask() {
-    onChecked(-1)
+    if (isChecked) {
+      onChecked(-1)
+    }
     onDeleteTask(taskTitle)
   }
 
