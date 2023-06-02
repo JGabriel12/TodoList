@@ -65,3 +65,8 @@ p {
   color: var(--danger);
   transition: background-color 0.1s;
 }
+
+.isChecked{
+  opacity: 0.6;
+  text-decoration: line-through
+}

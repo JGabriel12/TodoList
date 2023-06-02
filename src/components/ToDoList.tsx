@@ -8,6 +8,11 @@ export function ToDoList() {
 
   const [tasks, setTasks] = useState<Array<string>>([])
   const [title, setTitle] = useState<string>('')
+  const [checkedValue, setCheckedValue] = useState<number>(0)
+
+  function handleCheckedValue(value: number){
+    setCheckedValue(checkedValue + value)
+  }
 
   function handleChangeTitle(event: ChangeEvent<HTMLInputElement>) {
     setTitle(event.target.value)
@@ -50,7 +55,7 @@ export function ToDoList() {
         </div>
         <div>
           <span className={style.finishedTask}>Concluídas</span>
-          <span className={style.numberTask}>2 de 5</span>
+          <span className={style.numberTask}>{checkedValue} de {tasks.length}</span>
         </div>
       </div>
 
@@ -61,6 +66,7 @@ export function ToDoList() {
               key={task}
               taskTitle={task}
               onDeleteTask={deleteTask}
+              onChecked={handleCheckedValue}
             />
           )
         })}
