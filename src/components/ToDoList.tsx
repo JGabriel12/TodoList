@@ -2,7 +2,7 @@ import style from './ToDoList.module.css'
 import { PlusCircle } from 'phosphor-react'
 import { Task } from './Task'
 import { ChangeEvent, FormEvent, useState } from 'react'
-
+import { EmpyToDoList } from './EmpyToDoList'
 
 export function ToDoList() {
 
@@ -59,6 +59,7 @@ export function ToDoList() {
         </div>
       </div>
 
+    {tasks.length > 0 ? 
       <div>
         {tasks.map(task => {
           return (
@@ -70,7 +71,12 @@ export function ToDoList() {
             />
           )
         })}
-      </div>
+    </div>
+    :
+    <div>
+      <EmpyToDoList />
+    </div>
+  }
     </div>
   )
 }

@@ -1,0 +1,21 @@
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+
+   margin-top: 1.50rem;
+   width: 38rem;
+
+   border-top: 1px solid var(--gray-400);
+   border-radius: 8px
+}
+
+.clipBoard {
+  margin-top: 4rem;
+}
+
+.gap {
+  margin: 1rem 0;
+  color: var(--gray-300);
+}
