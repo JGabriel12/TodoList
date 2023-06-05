@@ -70,3 +70,17 @@ p {
   opacity: 0.6;
   text-decoration: line-through
 }
+
+@media (max-width: 640) {
+  .taskList {
+    /* Ajuste os estilos para dispositivos móveis */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  p {
+    /* Ajuste os estilos para dispositivos móveis */
+    width: 100%;
+  }
+}

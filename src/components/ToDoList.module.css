@@ -106,3 +106,37 @@ span {
   font-size: 0.75rem;
   line-height: 15px;
 }
+
+@media (max-width: 640px) {
+  .wrapper {
+    /* Ajuste os estilos para dispositivos móveis */
+    padding: 0.5rem;
+  }
+
+  .wrapper form {
+    /* Ajuste os estilos para dispositivos móveis */
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  .wrapper form input {
+    /* Ajuste os estilos para dispositivos móveis */
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+
+  .wrapper form button {
+    /* Ajuste os estilos para dispositivos móveis */
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .tasksCount {
+    /* Ajuste os estilos para dispositivos móveis */
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
