@@ -23,11 +23,11 @@
 
 <h1>Configuração do Ambiente de Desenvolvimento</h1>
 
-<h2>Para configurar o ambiente de desenvolvimento e executar o fórum localmente, siga as etapas abaixo:</h2>
+<h2>Para configurar o ambiente de desenvolvimento e executar o sistema localmente, siga as etapas abaixo:</h2>
 
 <h2>Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixá-lo em https://nodejs.org.</h2>
 
-<h2>Clone o repositório do fórum para o seu computador:</h2>
+<h2>Clone o repositório do sistema para o seu computador:</h2>
 
 ```
 git clone https://github.com/JGabriel12/TodoList
