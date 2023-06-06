@@ -1,5 +1,5 @@
 <h1>To-Do List desenvovido com React e TypeScript</h1>
-<p>Um exercício prático foi desenvolvido para ser entregue no primeiro módulo de React do Ignite, da Rocketseat. </p>
+<p>Um exercício prático, foi desenvolvido para ser entregue no primeiro módulo de React do Ignite, da Rocketseat. </p>
 
 <strong>\* Esse sistema foi desenvolvido a proposito de estudo de react da trilha ignite da rocketseat</strong>
 
